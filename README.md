@@ -32,12 +32,15 @@ We will setup a 3 node Kubernetes cluster in AWS cloud. We will simulate the e-c
 * Modify the launch_ec2.yml script to enter your AWS account information, secret keys etc.
 * Refer docker_using_ansible.txt file to install docker on all 3 nodes(ANSIBLE_DOCKER/INVENTORY directory contains the docker.yml and hosts.yml that you need to modisy as per your environment)
 * Refer KUBERNETES Folder and follow kubeadm_install.txt,kubernetes_cluster.txt and weavenet_install.txt files in sequence to setup kubernetes cluster.
+* To spin up AWS instances using Terraform follow : https://github.com/altafs1/terraform_AWS_spinup
+* Refer Ansible Playbooks for installations: https://github.com/altafs1/Ansible-Playbooks
 ## Build Demo Application using Spring Boot Framework
 Follow link https://start.spring.io/ and input Artifact name,Name, Description then click on GENERATE button at the bottom of screen to create front-end application Jar zip file and open zip file in any IDE of your choice in this case its Eclipse as shown below. 
 ![image](https://user-images.githubusercontent.com/83549198/146668155-4742c546-d39d-4878-9730-4d4f9a2e2661.png)
 * Repeat above steps to create database zip jar file 
 * Modify the files using Ecplise IDE to append your own code or use the existing code as it is.
 * Upload the front-end and database jar files onto kubernetes cluster.
+* Reference SpringBoot App: https://github.com/altafs1/SpringBootMavenWebApp
 ## Pod Creation
 * Using the YAML scripts enter the front-end and database docker images
 * deploy the PODS
